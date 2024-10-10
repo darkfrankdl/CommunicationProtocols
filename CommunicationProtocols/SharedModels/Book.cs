@@ -1,4 +1,4 @@
-﻿namespace RESTServer.Controllers
+﻿namespace SharedModels
 {
     public class Book
     {

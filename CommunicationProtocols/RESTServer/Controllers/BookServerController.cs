@@ -1,23 +1,23 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SharedModels;
 
 namespace RESTServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookController : ControllerBase
+    public class BookServerController : ControllerBase
     {
         List<Book> _books;
-        public BookController() 
+        public BookServerController() 
         {
             _books = new List<Book>() { new Book() { Id = 1 } };
         }
 
         [HttpGet]
-        public ActionResult<Book> Get(int id)
+        public ActionResult<IEnumerable<Book>> GetAll()
         {
-            Book book = _books[id];
-            return book;
+            return _books;
         }
     }
 }

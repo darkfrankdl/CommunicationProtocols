@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTServer", "RESTServer\RESTServer.csproj", "{EF23D5CC-9597-460F-982A-A769F59FC0F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RESTServer", "RESTServer\RESTServer.csproj", "{EF23D5CC-9597-460F-982A-A769F59FC0F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTClient", "RESTClient\RESTClient.csproj", "{53332D7E-DA0C-4D48-972D-EAA9CE637DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedModels", "SharedModels\SharedModels.csproj", "{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{EF23D5CC-9597-460F-982A-A769F59FC0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF23D5CC-9597-460F-982A-A769F59FC0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF23D5CC-9597-460F-982A-A769F59FC0F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53332D7E-DA0C-4D48-972D-EAA9CE637DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53332D7E-DA0C-4D48-972D-EAA9CE637DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53332D7E-DA0C-4D48-972D-EAA9CE637DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53332D7E-DA0C-4D48-972D-EAA9CE637DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
