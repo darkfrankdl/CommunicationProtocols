@@ -5,9 +5,17 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RESTServer", "RESTServer\RESTServer.csproj", "{EF23D5CC-9597-460F-982A-A769F59FC0F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTClient", "RESTClient\RESTClient.csproj", "{53332D7E-DA0C-4D48-972D-EAA9CE637DC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RESTClient", "RESTClient\RESTClient.csproj", "{53332D7E-DA0C-4D48-972D-EAA9CE637DC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedModels", "SharedModels\SharedModels.csproj", "{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedModels", "SharedModels\SharedModels.csproj", "{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingProducer", "MessagingProducer\MessagingProducer.csproj", "{81B533F8-686A-4B80-BDE0-C95B721307F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingConsumer", "MessagingConsumer\MessagingConsumer.csproj", "{28ABCE2B-92F7-4277-AF75-D0E6638A5D4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{99DD02CD-9EB5-4035-846F-8E2AAD3CCD96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "REST", "REST", "{647E1ACE-13F5-462A-9328-4F4BBC3B506D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,23 @@ Global
 		{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EBC4F0F-C9DD-4A51-AAC0-347D15BB6C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B533F8-686A-4B80-BDE0-C95B721307F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B533F8-686A-4B80-BDE0-C95B721307F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B533F8-686A-4B80-BDE0-C95B721307F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B533F8-686A-4B80-BDE0-C95B721307F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28ABCE2B-92F7-4277-AF75-D0E6638A5D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28ABCE2B-92F7-4277-AF75-D0E6638A5D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28ABCE2B-92F7-4277-AF75-D0E6638A5D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28ABCE2B-92F7-4277-AF75-D0E6638A5D4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF23D5CC-9597-460F-982A-A769F59FC0F6} = {647E1ACE-13F5-462A-9328-4F4BBC3B506D}
+		{53332D7E-DA0C-4D48-972D-EAA9CE637DC6} = {647E1ACE-13F5-462A-9328-4F4BBC3B506D}
+		{81B533F8-686A-4B80-BDE0-C95B721307F2} = {99DD02CD-9EB5-4035-846F-8E2AAD3CCD96}
+		{28ABCE2B-92F7-4277-AF75-D0E6638A5D4D} = {99DD02CD-9EB5-4035-846F-8E2AAD3CCD96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F98743D8-BCD6-4A55-A63F-611627D6A7EF}
